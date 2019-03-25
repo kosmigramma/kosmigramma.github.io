@@ -1,64 +1,117 @@
-
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" type="image/svg" href="/Kosmihead.svg" />
-
-    <title>Cover Template for Bootstrap</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/cover/">
-
-    <!-- Bootstrap core CSS -->
-    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
-  </head>
-
-  <body class="text-center">
-
-    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-      <header class="masthead mb-auto">
-        <div class="inner">
-            <h3 class="masthead-brand">
-                <img class="logo" src="Kosmihead.svg"/>
-                <div>Kosmi</div>
-            </h3>
-          <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Contact</a>
-          </nav>
-        </div>
-      </header>
-
-      <main role="main" class="inner cover">
-        <h1 class="cover-heading">Cover your page.</h1>
-        <p class="lead">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-        Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-        <p class="lead">
-          <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-                <img class="logobig" src="Kosmibasic.svg"/>
-        </p>
-      </main>
-
-      <footer class="mastfoot mt-auto">
-        <div class="inner">
-        </div>
-      </footer>
-    </div>
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/popper.min.js"></script>
-    <script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
-  </body>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Kosmi</title>
+      <link rel="icon" type="image/svg" href="assets/favicon.png" />
+      <link href="style.css" rel="stylesheet">
+   </head>
+   <body>
+      <div class="container">
+         <div class="logo-wrapper">
+            <img class="logo" src="assets/kosmihead.svg"/>
+            <div class="logo-text">Kosmi</div>
+         </div>
+         <div class="site-list comingsoon">
+            <p>New platform Coming very very soon...</p>
+            <p>Stay tuned!</p>
+         </div>
+         <div class="site-list discord">
+            <p>Join us on Discord!
+               <a href="https://discord.gg/ZxV5N88">https://discord.gg/ZxV5N88</a>
+            </p>
+         </div>
+         <div class="site-list">
+            <h1>
+            Applications</h2>
+            <div class="sitewrapper">
+               <div class="site left">
+                  <div class="site-logo">
+                     <img src="assets/sneslogo.png"/>
+                     <a href="https://snes.party">SNES Party</a>
+                  </div>
+                  <div class="site-text">
+                     SNES Party is an in-browser online emulator for the SNES where you can play SNES games in online multiplayer with your buddies, simply by sharing a link!
+                  </div>
+                  <a class="site-url" href="https://snes.party">
+                  snes.party
+                  </a>
+               </div>
+               <img class="screenshot" src="assets/snespartyscreenshot.png"/>
+            </div>
+            <div class="sitewrapper">
+               <img class="screenshot" src="assets/nespartyscreenshot.png"/>
+               <div class="site right">
+                  <div class="site-logo">
+                     <img src="assets/nesparty.png"/>
+                     <a href="https://snes.party">NES Party</a>
+                  </div>
+                  <div class="site-text">
+                     In the same way as SNES Party, NES Party is an in-browser online emulator for the NES where you can play NES games in online multiplayer with your buddies, simply by sharing a link!
+                  </div>
+                  <a class="site-url" href="https://nes.party">
+                  nes.party
+                  </a>
+               </div>
+            </div>
+            <div class="sitewrapper">
+               <div class="site left">
+                  <div class="site-logo">
+                     <img src="assets/oalive.png"/>
+                     <a href="https://openarena.live">OpenArena Live</a>
+                  </div>
+                  <div class="site-text">
+                     OpenArena is a free clone of the famous FPS Quake III Arena.
+                     Unafilliated with the OpenArena team, this project allows playing the game completely within the browser.
+                     The servers are run by the users using p2p technology powered by WebRTC.
+                     This means anyone can run a gameserver from the browser using a simple UI!
+                  </div>
+                  <a class="site-url" href="https://openarena.live">
+                  openarena.live
+                  </a>
+               </div>
+               <img class="screenshot" src="assets/oascreenshot.png"/>
+            </div>
+            <div class="sitewrapper">
+               <img class="screenshot" src="assets/cardtablesscreenshot.png"/>
+               <div class="site right">
+                  <div class="site-logo">
+                     <img src="assets/cardtables.png"/>
+                     <a href="https://cardtables.online">Cardtables Online</a>
+                  </div>
+                  <div class="site-text">
+                     Cardtables Online is a way to play any cardgame with your friends using a virtual cardtable. You simply create a room with a shareable link and play any card game with your buddies. You can even communicate using webcam/microphone with members of the table.
+                  </div>
+                  <a class="site-url" href="https://cardtables.online">
+                  cardtables.online
+                  </a>
+               </div>
+            </div>
+            <div class="sitewrapper">
+               <div class="site left">
+                  <div class="site-logo">
+                     <img src="assets/cowatch.png"/>
+                     <a href="https://cowatch.video">CoWatch Video</a>
+                  </div>
+                  <div class="site-text">
+                     Ever wanted to watch videos with your friends but you're not in the same room? Now you can! Just load your video and share a link. You can even chat with your friends with a microphone while watching!
+                  </div>
+                  <a class="site-url" href="https://cowatch.video">
+                  cowatch.video
+                  </a>
+               </div>
+               <img class="screenshot" src="assets/cowatchvideoscreenshot.png"/>
+            </div>
+         </div>
+      </div>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55048703-11"></script>
+      <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-55048703-11');
+      </script>
+<Paste>
+   </body>
 </html>

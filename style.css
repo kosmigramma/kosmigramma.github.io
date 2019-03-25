@@ -1,0 +1,179 @@
+@font-face {
+  font-family: "Bauhaus 93";
+  src: url("assets/bauhaus93.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Bahnschrift Semibold";
+  src: url("assets/bahnschrift_semibold.ttf") format("truetype");
+}
+
+html,
+body {
+  background-color: #1e1f21;
+  background-color: #070e19;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #fff377;
+}
+h1 {
+  box-sizing: border-box;
+  font-size: 48px;
+  color: #fff;
+  width: 100%;
+  border-bottom: 1px solid white;
+  padding: 0 10px;
+}
+.container {
+  padding: 20px 0px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  flex-direction: column;
+  font-family: "Bahnschrift Semibold";
+}
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.logo-text {
+  font-family: "Bauhaus 93";
+  font-size: 52px;
+  letter-spacing: 2px;
+  margin-left: 15px;
+  color: #fff377;
+}
+.logo {
+  height: 75px;
+  margin-left: 10px;
+}
+.site-list {
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #322484;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.left {
+  margin-right: auto;
+}
+.right {
+  margin-left: auto;
+}
+.site-logo {
+  display: flex;
+  font-weight: bold;
+  font-size: 36px;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+.right .site-logo {
+  flex-direction: row;
+}
+.site-logo img {
+  display: flex;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.site-logo div {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.site-text {
+  text-align: left;
+  margin-left: 20px;
+  color: #ccc;
+}
+.site-url {
+  text-align: left;
+  margin-left: 20px;
+}
+.site-logo a {
+  color: #fff;
+  text-decoration: none;
+  text-align: left;
+}
+.site-list.comingsoon {
+  display: flex;
+  color: #fff377;
+  border: 5px solid;
+  width: 100%;
+  height: 100px;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.comingsoon p {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 18px;
+}
+.discord {
+  width: 100%;
+  border: 5px solid #7289da;
+  color: #fff;
+}
+.discord a {
+  display: block;
+  margin-top: 10px;
+}
+.sitewrapper {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.screenshot {
+  width: 320px;
+  height: 180px;
+  margin: 10px;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+@media (min-width: 800px) {
+  .container {
+    padding: 20px;
+  }
+  .site-list {
+    border-radius: 20px;
+    width: 100%;
+    padding: 0 50px;
+  }
+  .site {
+    width: 50%;
+  }
+}
+
+@media (max-width: 799px) {
+  .site {
+    width: 100%;
+  }
+  .container {
+    margin: 0;
+  }
+  .screenshot {
+    display: none;
+  }
+}
