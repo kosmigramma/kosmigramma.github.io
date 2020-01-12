@@ -527,6 +527,6 @@ ul.contact li a {
 
 @media (max-height: 800px) {
   .container {
-    zoom: 0.75;
+    zoom: 0.6 !important;
   }
 }
