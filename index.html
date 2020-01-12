@@ -1,133 +1,238 @@
 <!doctype html>
 <html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Kosmi</title>
-      <link rel="icon" type="image/svg" href="assets/favicon.png" />
-      <link href="style.css" rel="stylesheet">
-   </head>
-   <body>
-      <div class="container">
-         <div class="logo-wrapper">
-            <img class="logo" src="assets/kosmihead.svg"/>
-            <div class="logo-text">Kosmi</div>
-         </div>
-         <div class="site-list comingsoon">
-            <p>New platform Coming very very soon...</p>
-            <p>Stay tuned!</p>
-         </div>
-         <div class="site-list discord">
-            <p>Join us on Discord!
-               <a href="https://discord.gg/ZxV5N88">https://discord.gg/ZxV5N88</a>
-            </p>
-         </div>
-         <div class="site-list">
-            <h1>
-            Applications</h2>
-            <div class="sitewrapper">
-               <div class="site left">
-                  <div class="site-logo">
-                     <img src="assets/sneslogo.png"/>
-                     <a href="https://snes.party">SNES Party</a>
-                  </div>
-                  <div class="site-text">
-                     SNES Party is an in-browser online emulator for the SNES where you can play SNES games in online multiplayer with your buddies, simply by sharing a link!
-                  </div>
-                  <a class="site-url" href="https://snes.party">
-                  snes.party
-                  </a>
-               </div>
-               <img class="screenshot" src="assets/snespartyscreenshot.png"/>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kosmi</title>
+    <link rel="icon" type="image/svg" href="assets/favicon.png" />
+    <script>
+        window.onresize = function() {
+            let vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        }
+        window.onresize();
+    </script>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="/#main" class="logoWrapper">
+        <img class="logo" src="assets/kosmihead.svg" />
+        <div href="/#main" class="logoText">Kosmi</div>
+    </a>
+        <nav>
+            <ul>
+                <li class="hiddenMobile">
+                    <a href="/#main">Home</a>
+                </li>
+                <li class="hiddenMobile dropdownTrigger">
+                    <a>Features</a>
+                    <ul class="dropdown">
+                        <li><a href="/#virtualRoomsScreen">Virtual Rooms</a></li>
+                        <li><a href="/#nesScreen">S/Nes Party</a></li>
+                        <li><a href="/#pokerScreen">Poker</a></li>
+                        <li><a href="/#openarenaScreen">OpenArena</a></li>
+                        <li><a href="/#virtualCardtableScreen">Virtual Cardtable</a></li>
+                        <li><a href="/#cowatchScreen">Cowatch</a></li>
+                        <li><a href="/#youtubeScreen">YouTube</a></li>
+                        <li><a href="/#lobbyScreen">Lobby</a></li>
+                    </ul>
+                </li>
+                <li class="hiddenMobile">
+                    <a href="/#sdkScreen">SDK</a>
+                </li>
+                <li class="hiddenMobile">
+                    <a href="/#contactScreen">Contact</a>
+                </li>
+                <li>
+                    <a class="launchButton" target="_blank" href="https://app.kosmi.io/">Launch</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+    <section id="main">
+        <div class="headerPlaceholder"></div>
+        <div class="container">
+            <img src="/assets/kosmiscreen.png">
+            <div class="sectionText">
+                <h1>Digital Hangouts Reinvented</h1>
+                <p>Watch videos together, play games, or simply chat with friends or strangers all from within your browser!</p> <p>No installation or signup needed.</p>
+                <a class="launchButton hiddenMobile" target="_blank" href="https://app.kosmi.io/">Launch now!</a>
             </div>
-            <div class="sitewrapper">
-               <img class="screenshot" src="assets/nespartyscreenshot.png"/>
-               <div class="site right">
-                  <div class="site-logo">
-                     <img src="assets/nesparty.png"/>
-                     <a href="https://snes.party">NES Party</a>
-                  </div>
-                  <div class="site-text">
-                     In the same way as SNES Party, NES Party is an in-browser online emulator for the NES where you can play NES games in online multiplayer with your buddies, simply by sharing a link!
-                  </div>
-                  <a class="site-url" href="https://nes.party">
-                  nes.party
-                  </a>
-               </div>
+        </div>
+    </section>
+    <section id="virtualRoomsScreen">
+        <div class="headerPlaceholder"></div>
+        <div class="container">
+            <img src="/assets/room_media.svg" class="icon hiddenMobile">
+            <div class="sectionText">
+                <h1>Virtual Rooms</h1>
+                <p>Kosmi revolves around a virtual room system. You can think of virtual rooms as extensively featured chat rooms. Features include:
+                    <ul class="checklist">
+
+                        <li>
+                            In-room chat
+                        </li>
+
+                        <li>
+                            Webcam/Microphone support
+                        </li>
+
+                        <li>
+                            Instant invite using a URL
+                        </li>
+
+                        <li class="important">
+                            Ability to run Real-time applications such as games, emulators and synced video
+                        </li>
+
+                        <ul>
             </div>
-            <div class="sitewrapper">
-               <div class="site left">
-                  <div class="site-logo">
-                     <img src="assets/oalive.png"/>
-                     <a href="https://openarena.live">OpenArena Live</a>
-                  </div>
-                  <div class="site-text">
-                     OpenArena is a free clone of the famous FPS Quake III Arena.
-                     Unafilliated with the OpenArena team, this project allows playing the game completely within the browser.
-                     The servers are run by the users using p2p technology powered by WebRTC.
-                     This means anyone can run a gameserver from the browser using a simple UI!
-                  </div>
-                  <a class="site-url" href="https://openarena.live">
-                  openarena.live
-                  </a>
-               </div>
-               <img class="screenshot" src="assets/oascreenshot.png"/>
+        </div>
+        <div class="moreBelow">Applications&#9660;</div>
+    </section>
+    <section id="nesScreen">
+        <div class="headerPlaceholder"></div>
+        <div class="container">
+            <img src="/assets/snespartyscreenshot.png">
+            <div class="sectionText">
+                <h1><img src="https://kosmi.io/assets/sneslogo.png" />NES Party and SNES Party</h1>
+                <p>
+                    Start a NES or SNES Emulator in the room, load a ROM and enjoy instant multiplayer with room members!
+                </p>
+                <div>
+                    As seen on:
+                <ul class="seenOnList">
+                    <li>
+                        <a target="_blank" href="https://techcrunch.com/2018/08/16/snes-party-lets-you-play-super-nintendo-with-your-friends/"><img src="./assets/techcrunch.png" /></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.engadget.com/2018/08/17/snes-party-multiplayer-emulator/"> <img src="./assets/engadget.png" /></a>
+                    </li>
+                </ul>
+                </div>
             </div>
-            <div class="sitewrapper">
-               <img class="screenshot" src="assets/kosmipokerscreenshot.png"/>
-               <div class="site right">
-                  <div class="site-logo">
-                     <img src="assets/kosmipoker.svg"/>
-                     <a href="https://poker.kosmi.io">Kosmi Poker</a>
-                  </div>
-                  <div class="site-text">
-                      Kosmi Poker a way to create a private Poker room to play with your buddies!
-                      Using WebRTC you can even communicate using webcam/microphone with members of the room and the members faces appear in their seats, making the experience feel just as if you are playing in real life!
-                  </div>
-                  <a class="site-url" href="https://poker.kosmi.io">
-                  poker.kosmi.io
-                  </a>
-               </div>
+        </div>
+    </section>
+    <section id="pokerScreen">
+        <div class="headerPlaceholder"></div>
+        <div class="container">
+            <img src="/assets/pokerscreenshot.png">
+            <div class="sectionText">
+                <h1><img src="https://kosmi.io/assets/kosmipoker.svg" />Texas Holdem Poker</h1>
+                <p>
+                Your own private Texas Holdem Poker table to play with your buddies in the room!</p> <p>It has webcam support so players faces appear right in their seats, making the experience feel almost as if you are playing in real life!
+                </p>
             </div>
-            <div class="sitewrapper">
-               <div class="site left">
-                  <div class="site-logo">
-                     <img src="assets/cardtables.svg"/>
-                     <a href="https://cardtables.online">Cardtables Online</a>
-                  </div>
-                  <div class="site-text">
-                     Cardtables Online is a way to play any cardgame with your friends using a virtual cardtable. You simply create a room with a shareable link and play any card game with your buddies. You can even communicate using webcam/microphone with members of the table.
-                  </div>
-                  <a class="site-url" href="https://cardtables.online">
-                  cardtables.online
-                  </a>
-               </div>
-               <img class="screenshot" src="assets/cardtablesscreenshot.png"/>
+        </div>
+    </section>
+    <section id="openarenaScreen">
+        <div class="headerPlaceholder"></div>
+        <div class="container">
+            <img src="/assets/oascreenshot.png">
+            <div class="sectionText">
+                <h1><img src="https://kosmi.io/assets/oalive.png" />OpenArena</h1>
+                <p>
+                    OpenArena is a free clone of the famous FPS Quake III Arena.
+                    Start a server in the room and enjoy this classic FPS with room members!
+                </p>
             </div>
-            <div class="sitewrapper">
-               <img class="screenshot" src="assets/cowatchvideoscreenshot.png"/>
-               <div class="site right">
-                  <div class="site-logo">
-                     <img src="assets/cowatch.png"/>
-                     <a href="https://cowatch.video">CoWatch Video</a>
-                  </div>
-                  <div class="site-text">
-                     Ever wanted to watch videos with your friends but you're not in the same room? Now you can! Just load your video and share a link. You can even chat with your friends with a microphone while watching!
-                  </div>
-                  <a class="site-url" href="https://cowatch.video">
-                  cowatch.video
-                  </a>
-               </div>
+        </div>
+    </section>
+    <section class="poker" id="virtualCardtableScreen">
+        <div class="headerPlaceholder"></div>
+        <div class="container">
+            <img src="/assets/cardtablesscreenshot.png">
+            <div class="sectionText">
+                <h1><img src="https://kosmi.io/assets/cardtables.svg" />Virtual Cardtable</h1>
+                <p>
+                Start a Virtual Cardtable in the room.</p> <p>Play any cardgame that can be played on a standard deck of cards.</p> <p>It has webcam support so players faces appear right in their seats, making the experience feel almost as if you are playing in real life!
+                </p>
             </div>
-         </div>
-      </div>
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55048703-11"></script>
-      <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'UA-55048703-11');
-      </script>
-<Paste>
-   </body>
+        </div>
+    </section>
+    <section id="cowatchScreen">
+        <div class="headerPlaceholder"></div>
+        <div class="container">
+            <img src="/assets/cowatchvideoscreenshot.png">
+            <div class="sectionText">
+                <h1><img src="https://kosmi.io/assets/cowatch.png" />Cowatch</h1>
+                <p>
+                Load your own local video files into the room.</p> <p>The video gets synced and streamed to other members so you can watch together!
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="youtubeScreen">
+        <div class="headerPlaceholder"></div>
+        <div class="container">
+            <img src="/assets/youtubescreenshot.png">
+            <div class="sectionText">
+                <h1><img src="https://kosmi.io/assets/yt_icon_rgb.png" />YouTube</h1>
+                <p>
+                Watch YouTube videos with the members of the room!</p> <p>The Video is synced with everyone so you can cowatch YouTube videos at will. Just put in a YouTube URL and click Play!
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="lobbyScreen" class="darkenBg">
+        <div class="headerPlaceholder"></div>
+        <div class="container">
+            <img src="/assets/public.svg" class="icon">
+            <div class="sectionText">
+                <h1>Public Lobby</h1>
+                <p>
+                    The public lobby allows users to discover rooms looking for people to join!
+                </p>
+                <ul class="checklist">
+                    <li>
+                        Public chat with Discord integration
+                    </li>
+
+                    <li>
+                        List of public rooms to join
+                    </li>
+            </div>
+        </div>
+    </section>
+    <section id="sdkScreen">
+        <div class="headerPlaceholder"></div>
+        <div class="container">
+            <img src="/assets/wrench.svg" class="icon">
+            <div class="sectionText">
+                <h1>Kosmi SDK</h1>
+                <p>
+                    The upcoming Kosmi SDK will allow Developers to develop their own apps to run inside Kosmi rooms.
+                </p>
+                <p>For early access please contact <span class="important">sdk[at]kosmi.io</span> with a description on what you can imagine using it for.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contactScreen" class="lightenBg">
+        <div class="headerPlaceholder"></div>
+        <div class="container">
+            <img src="/assets/contact.svg" class="icon">
+            <div class="sectionText">
+                <h1>Contact</h1>
+                <ul class="contact">
+                    <li>Discord: <a href="https://discordapp.com/invite/ZxV5N88">https://discordapp.com/invite/ZxV5N88</a></li>
+                    <li>Email: <span class="important">kosmi[at]kosmi.io</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    </div>
+
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-55048703-11');
+</script>
+
+</body>
+
 </html>
