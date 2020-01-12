@@ -525,8 +525,21 @@ ul.contact li a {
   }
 }
 
-@media (max-height: 800px) {
-  .container {
-    zoom: 0.6 !important;
+@media (max-height: 1000px) {
+  .container h1 {
+    margin-top: 0px !important;
+  }
+  .container,
+  .sectionText {
+    padding-top: 0px !important;
+  }
+  .sectionText {
+    font-size: 18px;
+  }
+}
+
+@media (max-height: 600px) {
+  .sectionText {
+    font-size: 14px;
   }
 }
