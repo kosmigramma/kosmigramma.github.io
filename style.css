@@ -526,7 +526,7 @@ ul.contact li a {
   }
 }
 
-@media (max-height: 1000px) {
+@media (max-height: 800px) {
   .container h1 {
     margin-top: 0px !important;
   }
