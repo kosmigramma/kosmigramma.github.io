@@ -48,7 +48,6 @@ section {
   flex-direction: column;
   max-width: 100%;
   text-align: center;
-  scroll-snap-align: start;
 }
 
 .container {
@@ -178,10 +177,9 @@ section:nth-child(even) .container > img {
 
 .sectionText {
   font-family: roboto, sans-serif;
-  color: #fff377;
   text-align: left;
   margin-right: auto;
-  color: white;
+  color: #f0f0f0;
   margin-left: 50px;
   max-width: 400px;
   width: 50%;
@@ -379,7 +377,7 @@ nav > ul li a {
 }
 
 nav > ul li a:hover {
-  color: white;
+  color: #f7f7f7;
 }
 
 /* Screens */
