@@ -215,7 +215,7 @@ section:nth-child(even) .container > img {
 .dropdown {
   display: none;
   background-color: green;
-  height: 250px;
+  height: 270px;
   position: fixed;
   margin-top: 20px;
   list-style-type: none;
@@ -412,6 +412,7 @@ nav > ul li a:hover {
 #nesScreen {
   background-color: #342364;
 }
+
 .seenOnList {
   list-style-type: none;
   padding: 0;
