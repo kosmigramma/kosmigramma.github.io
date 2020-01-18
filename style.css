@@ -211,6 +211,9 @@ section:nth-child(even) .container > img {
   margin: 10px !important;
   margin-bottom: 2px;
 }
+.sectionText h1 img.youtube {
+  height: 30px;
+}
 
 .dropdown {
   display: none;
