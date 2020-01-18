@@ -540,9 +540,3 @@ ul.contact li a {
     font-size: 18px;
   }
 }
-
-@media (max-height: 600px) {
-  .sectionText {
-    font-size: 14px;
-  }
-}
