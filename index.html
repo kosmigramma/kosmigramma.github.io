@@ -19,6 +19,7 @@
         window.onresize();
     </script>
     <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
 </head>
 
 <body>
@@ -62,7 +63,7 @@
     <section id="main">
         <div class="headerPlaceholder"></div>
         <div class="container">
-            <img src="/assets/kosmiscreen.png" alt="App Screenshot">
+            <img src="/assets/kosmiscreen.jpg" alt="App Screenshot">
             <div class="sectionText">
                 <h1>Digital Hangouts Reinvented</h1>
                 <p>Watch videos together, play games, or simply chat with friends or strangers all from within your browser!</p> <p>No installation or signup needed.</p>
@@ -103,7 +104,7 @@
     <section id="nesScreen">
         <div class="headerPlaceholder"></div>
         <div class="container">
-            <img src="/assets/snespartyscreenshot.jpg" alt="SNES Party Screenshot">
+            <img class="lazyload" alt="SNES Party Screenshot" src="/assets/placeholder.jpg" data-src="/assets/snespartyscreenshot.jpg">
             <div class="sectionText">
                 <h1><img src="https://kosmi.io/assets/sneslogo.png" alt="SNES Party logo"/>NES Party and SNES Party</h1>
                 <p>
@@ -126,7 +127,7 @@
     <section id="pokerScreen">
         <div class="headerPlaceholder"></div>
         <div class="container">
-            <img alt="Poker Screenshot" src="/assets/pokerscreenshot.jpg">
+            <img class="lazyload" alt="Poker Screenshot" src="/assets/placeholder.jpg" data-src="/assets/pokerscreenshot.jpg">
             <div class="sectionText">
                 <h1><img alt="Poker icon" src="https://kosmi.io/assets/kosmipoker.svg" />Texas Holdem Poker</h1>
                 <p>
@@ -138,7 +139,7 @@
     <section id="openarenaScreen">
         <div class="headerPlaceholder"></div>
         <div class="container">
-            <img alt="OpenArena Screenshot" src="/assets/oascreenshot.jpg">
+            <img class="lazyload" alt="OpenArena Screenshot" src="/assets/placeholder.jpg" data-src="/assets/oascreenshot.jpg">
             <div class="sectionText">
                 <h1><img alt="OpenArena Icon" src="https://kosmi.io/assets/oalive.png" />OpenArena</h1>
                 <p>
@@ -151,7 +152,7 @@
     <section class="poker" id="virtualCardtableScreen">
         <div class="headerPlaceholder"></div>
         <div class="container">
-            <img alt="Virtual Cardtable Screenshot" src="/assets/cardtablesscreenshot.jpg">
+            <img class="lazyload" alt="Virtual Cardtable Screenshot" src="/assets/placeholder.jpg" data-src="/assets/cardtablesscreenshot.jpg">
             <div class="sectionText">
                 <h1><img alt="Virtual Cardtable Icon" src="https://kosmi.io/assets/cardtables.svg" />Virtual Cardtable</h1>
                 <p>
@@ -163,7 +164,7 @@
     <section id="cowatchScreen">
         <div class="headerPlaceholder"></div>
         <div class="container">
-            <img alt="Cowatch Screenshot" src="/assets/cowatchvideoscreenshot.jpg">
+            <img class="lazyload" alt="Cowatch Screenshot" src="/assets/placeholder.jpg" data-src="/assets/cowatchvideoscreenshot.jpg">
             <div class="sectionText">
                 <h1><img alt="Cowatch Icon" src="https://kosmi.io/assets/cowatch.png" />Cowatch</h1>
                 <p>
@@ -175,7 +176,7 @@
     <section id="screenShareScreen">
         <div class="headerPlaceholder"></div>
         <div class="container">
-            <img alt="Screenshare screenshot" src="/assets/screensharescreenshot.jpg">
+            <img class="lazyload" alt="Screenshare screenshot" src="/assets/placeholder.jpg" data-src="/assets/screensharescreenshot.jpg">
             <div class="sectionText">
                 <h1><img alt="Screenshare icon" src="https://kosmi.io/assets/screenshare.png" />Screenshare</h1>
                 <p>
@@ -187,7 +188,7 @@
     <section id="youtubeScreen">
         <div class="headerPlaceholder"></div>
         <div class="container">
-            <img alt="YouTube screenshot" src="/assets/youtubescreenshot.jpg">
+            <img class="lazyload" alt="YouTube screenshot" src="/assets/placeholder.jpg" data-src="/assets/youtubescreenshot.jpg">
             <div class="sectionText">
                 <h1><img class="youtube" alt="YouTube icon" src="https://kosmi.io/assets/yt_icon_rgb.png" />YouTube</h1>
                 <p>
@@ -247,6 +248,7 @@
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55048703-11"></script>
 <script>
+lazyload();
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
