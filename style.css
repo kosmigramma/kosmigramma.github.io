@@ -216,15 +216,18 @@ section:nth-child(even) .container > img {
 
 .dropdown {
   display: none;
+  position: fixed;
+  padding-top: 10px;
+}
+.dropdown ul {
   background-color: green;
   height: 270px;
-  position: fixed;
-  margin-top: 20px;
+  margin-top: 0px;
   list-style-type: none;
   padding: 0px;
   width: 150px;
   border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   overflow: hidden;
 }
 .dropdown li {
