@@ -317,6 +317,7 @@ img.icon {
   transition: all 0.5s ease;
   text-decoration: none;
   font-weight: 700;
+  margin-right: 0px;
 }
 
 .launchButton:hover {
@@ -367,7 +368,12 @@ nav > ul {
 
 nav > ul li {
   float: left;
-  padding: 20px;
+  margin: 20px;
+}
+
+nav > ul li.launchItem {
+  float: left;
+  margin-right: 0px;
 }
 
 nav > ul li a {
