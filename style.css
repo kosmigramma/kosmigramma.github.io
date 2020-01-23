@@ -70,7 +70,8 @@ section {
   max-height: 400px;
 }
 
-.container > img {
+.container > img,
+.container > noscript > img {
   width: 45%;
   -webkit-transition: all 1s;
   -o-transition: all 1s;
@@ -113,7 +114,19 @@ section {
   );
 }
 
-.container img:hover {
+.container > noscript {
+  width: 45%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+}
+
+.container > noscript > img {
+  width: 100%;
+}
+
+.container > img:hover,
+noscript > img:hover {
   -webkit-transform: none !important;
   -ms-transform: none !important;
   transform: none !important;
@@ -131,7 +144,8 @@ section:nth-child(even) .sectionText {
   margin-right: 50px;
 }
 
-section:nth-child(even) .container > img {
+section:nth-child(even) .container > img,
+section:nth-child(even) .container > noscript > img {
   margin-right: auto;
   margin-left: 0px;
   -webkit-transform: matrix3d(
@@ -172,6 +186,11 @@ section:nth-child(even) .container > img {
       1
     )
     translateX(-10px);
+}
+
+section:nth-child(even) .container noscript {
+  margin-right: auto;
+  margin-left: 0px;
 }
 
 .sectionText {
@@ -470,6 +489,14 @@ ul.contact li a {
     width: 50%;
   }
 
+  .container noscript {
+    width: 50%;
+  }
+
+  .container noscript img {
+    width: 100%;
+  }
+
   .launchButton {
     padding: 10px;
   }
@@ -484,12 +511,21 @@ ul.contact li a {
     text-align: center;
   }
 
-  .container img {
+  .container > img {
     width: 80%;
     margin: auto !important;
     -webkit-transform: none !important;
     -ms-transform: none !important;
     transform: none !important;
+  }
+
+  .container noscript {
+    width: 80%;
+    margin: auto !important;
+  }
+
+  .container noscript img {
+    width: 100%;
   }
 
   .hiddenMobile {
