@@ -24,6 +24,13 @@ body {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
 }
+.buymeacoffee {
+  position: absolute;
+  right: 0;
+  top: 100px;
+  width: 217px;
+  height: 51px;
+}
 
 a {
   color: #fff377;
@@ -576,4 +583,10 @@ ul.contact li a {
   .sectionText {
     font-size: 18px;
   }
+}
+#buymeacoffee2 {
+  position: relative;
+  display: block;
+  top: 0px;
+  width: 200px;
 }
