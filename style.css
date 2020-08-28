@@ -134,7 +134,7 @@ section {
   width: 100%;
 }
 
-.container > img {
+.container > img, .container video {
   margin-top: auto;
   margin-bottom: auto;
   margin-left: auto;
@@ -145,47 +145,12 @@ section {
 }
 
 .container > img,
-.container > noscript > img {
+.container > noscript > img,
+.container > video {
   width: 45%;
   -webkit-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
-  -webkit-transform: matrix3d(
-    0.94,
-    0,
-    0.34,
-    0.0002,
-    0,
-    1,
-    0,
-    0,
-    -0.34,
-    0,
-    0.94,
-    0,
-    1,
-    0,
-    10,
-    1
-  );
-  transform: matrix3d(
-    0.94,
-    0,
-    0.34,
-    0.0002,
-    0,
-    1,
-    0,
-    0,
-    -0.34,
-    0,
-    0.94,
-    0,
-    1,
-    0,
-    10,
-    1
-  );
 }
 
 .container > noscript {
@@ -222,44 +187,6 @@ section:nth-child(even) .container > img,
 section:nth-child(even) .container > noscript > img {
   margin-right: auto;
   margin-left: 0px;
-  -webkit-transform: matrix3d(
-      0.94,
-      0,
-      0.34,
-      -0.0002,
-      0,
-      1,
-      0,
-      0,
-      -0.34,
-      0,
-      0.94,
-      0,
-      1,
-      0,
-      10,
-      1
-    )
-    translateX(-10px);
-  transform: matrix3d(
-      0.94,
-      0,
-      0.34,
-      -0.0002,
-      0,
-      1,
-      0,
-      0,
-      -0.34,
-      0,
-      0.94,
-      0,
-      1,
-      0,
-      10,
-      1
-    )
-    translateX(-10px);
 }
 
 section:nth-child(even) .container noscript {
@@ -573,7 +500,7 @@ ul.contact li a {
   }
 }
 
-@media (max-width: 765px) {
+@media (max-width: 800px) {
   .container {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: reverse !important;
@@ -582,7 +509,9 @@ ul.contact li a {
     text-align: center;
   }
 
-  .container > img {
+  .container > img,
+  .container > video
+  {
     width: 80%;
     margin: auto !important;
     -webkit-transform: none !important;
