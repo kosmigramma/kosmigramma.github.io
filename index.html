@@ -20,15 +20,6 @@
     </script>
 
     <link href="style.css" rel="stylesheet">
-
-    <noscript>
-        <style>
-            .lazyload {
-                display:none;
-            }
-        </style>
-    </noscript>
-
 </head>
 
 <body>
@@ -65,47 +56,6 @@
             </div>
         </div>
     </section>
-    <section id="pokerScreen">
-        <div class="headerPlaceholder"></div>
-        <div class="container">
-            <noscript>
-            <img alt="Poker Screenshot" src="/assets/pokerscreenshot.jpg">
-            </noscript>
-            <img class="lazyload" alt="Poker Screenshot" src="/assets/placeholder.jpg" data-src="/assets/pokerscreenshot.jpg">
-            <div class="sectionText">
-                <h1><img alt="Poker icon" src="https://kosmi.io/assets/kosmipoker.svg" />Texas Holdem Poker</h1>
-                <p>
-                Your own private Texas Holdem Poker table to play with your friends online!</p> <p>It has webcam support so players faces appear right in their seats, making the experience feel almost as if you are playing in real life!
-                </p>
-            </div>
-        </div>
-    </section>
-    <section id="cahScreen">
-        <div class="headerPlaceholder"></div>
-        <div class="container">
-            <noscript>
-            <img alt="Kosmi Offends the Galaxy Screenshot" src="/assets/pokerscreenshot.jpg">
-            </noscript>
-            <img class="lazyload" alt="Poker Screenshot" src="/assets/placeholder.jpg" data-src="/assets/cahscreenshot.jpg">
-            <div class="sectionText">
-                <h1><img alt="Kosmi Offends the Galaxy icon" src="https://kosmi.io/assets/kog.png" />Kosmi Offends the Galaxy</h1>
-                <p>
-                Play a clone of Cards Against Humanity with your friends online in the browser with webcam and microphone support!
-                    <p>
-                      ATTENTION: This is an unofficial clone of the game and not
-                      affiliated with the Cards Against Humanity company in any
-                      way.
-                      The official website is at
-                      <a target="_blank" rel="noreferrer noopener" href="https://cardsagainsthumanity.com">cardsagainsthumanity.com</a>.
-                      Please buy the real-life game there if you like it.
-                    </p>
-                    <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/">
-                      Remixed under Creative Commons BY-NC-SA 2.0 license.
-                    </a>
-                </p>
-            </div>
-        </div>
-    </section>
     <section id="contactScreen" class="lightenBg">
        <div class="headerPlaceholder"></div>
         <div class="container">
@@ -125,10 +75,6 @@
 
 <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
-<script>
-/*! Lazy Load 2.0.0-rc.2 - MIT license - Copyright 2007-2019 Mika Tuupola */
-!function(t,e){"object"==typeof exports?module.exports=e(t):"function"==typeof define&&define.amd?define([],e):t.LazyLoad=e(t)}("undefined"!=typeof global?global:this.window||this.global,function(t){"use strict";function e(t,e){this.settings=s(r,e||{}),this.images=t||document.querySelectorAll(this.settings.selector),this.observer=null,this.init()}"function"==typeof define&&define.amd&&(t=window);const r={src:"data-src",srcset:"data-srcset",selector:".lazyload",root:null,rootMargin:"0px",threshold:0},s=function(){let t={},e=!1,r=0,o=arguments.length;"[object Boolean]"===Object.prototype.toString.call(arguments[0])&&(e=arguments[0],r++);for(;r<o;r++)!function(r){for(let o in r)Object.prototype.hasOwnProperty.call(r,o)&&(e&&"[object Object]"===Object.prototype.toString.call(r[o])?t[o]=s(!0,t[o],r[o]):t[o]=r[o])}(arguments[r]);return t};if(e.prototype={init:function(){if(!t.IntersectionObserver)return void this.loadImages();let e=this,r={root:this.settings.root,rootMargin:this.settings.rootMargin,threshold:[this.settings.threshold]};this.observer=new IntersectionObserver(function(t){Array.prototype.forEach.call(t,function(t){if(t.isIntersecting){e.observer.unobserve(t.target);let r=t.target.getAttribute(e.settings.src),s=t.target.getAttribute(e.settings.srcset);"img"===t.target.tagName.toLowerCase()?(r&&(t.target.src=r),s&&(t.target.srcset=s)):t.target.style.backgroundImage="url("+r+")"}})},r),Array.prototype.forEach.call(this.images,function(t){e.observer.observe(t)})},loadAndDestroy:function(){this.settings&&(this.loadImages(),this.destroy())},loadImages:function(){if(!this.settings)return;let t=this;Array.prototype.forEach.call(this.images,function(e){let r=e.getAttribute(t.settings.src),s=e.getAttribute(t.settings.srcset);"img"===e.tagName.toLowerCase()?(r&&(e.src=r),s&&(e.srcset=s)):e.style.backgroundImage="url('"+r+"')"})},destroy:function(){this.settings&&(this.observer.disconnect(),this.settings=null)}},t.lazyload=function(t,r){return new e(t,r)},t.jQuery){const r=t.jQuery;r.fn.lazyload=function(t){return t=t||{},t.attribute=t.attribute||"data-src",new e(r.makeArray(this),t),this}}return e});
-</script>
 
 <script>
 window.cookieconsent.initialise({
@@ -144,7 +90,6 @@ window.cookieconsent.initialise({
 </script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55048703-11"></script>
 <script>
-lazyload();
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
