@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+    <link rel="icon" type="image/png" href="https://kosmi.io/assets/favicon.png" />
+    <meta name="description" content="Play a Cards Against Humanity clone with your friends with webcam and microphone support!" />
+
+    <title>Kosmi Offends the Galaxy</title>
+
+    <style type="text/css">
+        html,
+        body {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            background-color: #080717;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            line-height: 24px;
+        }
+
+        a,
+        a:active,
+        a:visited,
+        a:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        #container {
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            background-color: #0a241c;
+            color: #fff;
+            padding: 30px;
+            max-width: 600px;
+        }
+
+        #cahLogo {
+            color: #675097;
+            font-size: 32px;
+            margin-bottom: 25px;
+            text-align: center;
+            background-image: url('./cah_black.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+            height: 40px;
+            width: 100%;
+        }
+
+        #discordLink {
+            background-color: #7289da;
+            text-align: center;
+            margin: 20px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        #discordLink a {
+            margin-top: 10px;
+            display: block;
+        }
+
+        #createRoomButton {
+            background: #e0e1e2 none;
+            padding: 15px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 3px;
+            background-color: #23195c;
+            color: #fff;
+            font-size: 18px;
+            margin: 0 auto;
+            max-width: 400px;
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        #kosmiLogo {
+            margin: 0 auto;
+            width: 116px;
+            height: 37px;
+            background-image: url('https://kosmi.io/assets/banner.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+            margin: 15px auto;
+            flex-direction: column;
+            display: flex;
+        }
+
+        #poweredBy {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+        }
+        img {
+            max-width: 100%;
+            width: 500px;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+        #unofficial {
+            font-weight: bold;
+            font-family
+        }
+        #unofficial a {
+            color: yellow;
+        }
+        video {
+            max-width: 100%;
+            margin-bottom: 20px;
+            max-height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="cahLogo"></div>
+        <span id="unofficial">
+            ATTENTION: This is an unofficial edition of the game and is not affiliated with the official Cards Against Humanity company.
+The official website is at <a href="https://cardsagainsthumanity.com">cardsagainsthumanity.com</a>. Please buy the real-life game there if you like it.
+        </span>
+        <p>
+            Play a Cards Against Humanity clone online with your friends with webcam and microphone support!
+        </p>
+        <video
+          loop="true"
+          autoplay
+          playsinline
+          muted
+          src="./cah.mp4"
+        ></video>
+        This is how it works:
+        <ol>
+            <li>You create a room with a shareable link.</li>
+            <li>
+                Share the link with your friends to play together.
+            </li>
+            <li>
+                You can communicate using webcam/microphone with members of the room and the members faces appear in their seats, making the experience feel just as if you are playing in real life!
+            </li>
+        </ol>
+        <a target="_blank" id="createRoomButton" href="https://app.kosmi.io/createRoom?app=CARDS_AGAINST_HUMANITY">
+    Click here to create a room and start playing!
+    </a>
+        <span id="poweredBy">Powered by
+          <a
+            id="kosmiLogo"
+            href="https://kosmi.io"
+            ></a></span>
+                            <a style="margin: auto;" href="https://creativecommons.org/licenses/by-nc-sa/2.0/">
+                      Remixed under Creative Commons BY-NC-SA 2.0 license.
+                    </a>
+
+    </div>
+
+
+</body>
+
+</html>
