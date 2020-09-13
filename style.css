@@ -96,6 +96,13 @@ body {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
 }
+.merch {
+  position: absolute;
+  left: 0;
+  top: 100px;
+  width: 217px;
+  height: 51px;
+}
 .buymeacoffee {
   position: absolute;
   right: 0;
