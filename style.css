@@ -90,7 +90,7 @@ body {
   max-width: 100%;
 }
 
-.main {
+section {
   -ms-scroll-snap-type: y mandatory;
   scroll-snap-type: y mandatory;
   height: 100vh;
@@ -141,7 +141,8 @@ section {
   width: 100%;
 }
 
-.container > img, .container video {
+.container > img,
+.container video {
   margin-top: auto;
   margin-bottom: auto;
   margin-left: auto;
@@ -186,8 +187,7 @@ section:nth-child(even) .container {
 }
 
 section:nth-child(even) .sectionText {
-  margin-left: auto;
-  margin-right: 50px;
+  margin: auto;
 }
 
 section:nth-child(even) .container > img,
@@ -473,6 +473,7 @@ ul.contact {
 }
 ul.contact li {
   margin: 20px;
+  margin-left: 0px;
 }
 ul.contact li .important {
   display: block;
@@ -517,8 +518,7 @@ ul.contact li a {
   }
 
   .container > img,
-  .container > video
-  {
+  .container > video {
     width: 80%;
     margin: auto !important;
     -webkit-transform: none !important;
@@ -592,8 +592,20 @@ ul.contact li a {
     font-size: 18px;
   }
 }
+
 #buymeacoffee2 {
   position: relative;
   display: block;
   top: 0px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.legalLink {
+  display: inline-block;
+  margin: 50px;
 }
