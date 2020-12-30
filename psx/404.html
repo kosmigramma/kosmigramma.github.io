@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+    <style type="text/css">
+        html,
+        body {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            background-color: #080717;
+            font-family: Lato, Helvetica Neue, Arial, Helvetica, sans-serif;
+            margin: 0;
+            line-height: 24px;
+        }
+
+        a,
+        a:active,
+        a:visited,
+        a:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        #container {
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(0, 0, 0, .8);
+            color: #fff;
+            padding: 30px;
+            max-width: 600px;
+        }
+
+        #createRoomButton {
+            background: #e0e1e2 none;
+            padding: 15px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 3px;
+            background-color: #23195c;
+            color: #fff;
+            font-size: 18px;
+            margin: 0 auto;
+            max-width: 400px;
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <a target="_blank" id="createRoomButton" href="https://app.kosmi.io/room/9mcdje?app=snes_party">
+Join room
+        </a>
+    </div>
+    <script>
+        window.onload = function() {
+            function randomizeRoomLink() {
+                var roomid = location.href.substring(location.href.lastIndexOf('/') + 1);
+                document.getElementById("createRoomButton").href = "https://app.kosmi.io/room/" + roomid + "?app=snes_party";
+            }
+            randomizeRoomLink();
+        }
+    </script>
+
+</body>
+
+</html>
