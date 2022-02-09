@@ -368,7 +368,7 @@ header {
   -webkit-transform: translate3d(-50%, 0px, 1000px);
   transform: translate3d(-50%, 0px, 1000px);
   z-index: 1000;
-  background-color: #322484;
+  background-color: #3b2076;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
@@ -418,7 +418,7 @@ nav > ul li a:hover {
 /* Screens */
 
 #main {
-  background-color: #322484;
+  background-color: #3b2076;
 }
 
 .moreBelow {
