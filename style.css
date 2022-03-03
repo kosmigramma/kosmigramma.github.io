@@ -1,5 +1,14 @@
 /* cyrillic-ext */
 @font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kanit/v11/nKKU-Go6G5tXcr5KPxWzVaFrNlJzIu4.woff2) format('woff2');
+  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+
+@font-face {
   font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 400;
@@ -139,6 +148,7 @@ section {
   -ms-flex-align: start;
   align-items: flex-start; /* new */
   width: 100%;
+  flex-direction: column;
 }
 
 .container > img,
@@ -154,7 +164,7 @@ section {
 
 .container > img,
 .container > noscript > img,
-.container > video {
+.container video {
   width: 45%;
   -webkit-transition: all 1s;
   -o-transition: all 1s;
@@ -202,12 +212,12 @@ section:nth-child(even) .container noscript {
 }
 
 .sectionText {
-  font-family: roboto, sans-serif;
+  font-family: 'Kanit', roboto, sans-serif;
   text-align: left;
   margin-right: 50px;
   color: #f0f0f0;
   margin-left: auto;
-  max-width: 400px;
+  max-width: 500px;
   width: 50%;
   padding: 20px;
   margin-top: auto;
@@ -226,7 +236,7 @@ section:nth-child(even) .container noscript {
 }
 
 .sectionText h1 {
-  font-size: 42px;
+  font-size: 52px;
   line-height: 1;
 }
 
@@ -509,7 +519,10 @@ ul.contact li a {
 }
 
 @media (max-width: 800px) {
-  .container {
+  .container .getStarted {
+    display: none;
+  }
+  .container, .hero {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: reverse !important;
     -ms-flex-direction: column-reverse !important;
@@ -517,8 +530,8 @@ ul.contact li a {
     text-align: center;
   }
 
-  .container > img,
-  .container > video {
+  .container img,
+  .container video {
     width: 80%;
     margin: auto !important;
     -webkit-transform: none !important;
@@ -608,4 +621,25 @@ footer {
 .legalLink {
   display: inline-block;
   margin: 50px;
+}
+
+.hero {
+  display:flex;
+}
+
+.getStarted {
+  display:flex;
+  width: 100%;
+  color: #f0f0f0;
+}
+
+.getStarted > * {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.getStarted a {
+  margin-left: 20px;
 }
