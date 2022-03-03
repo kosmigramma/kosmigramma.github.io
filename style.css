@@ -145,7 +145,7 @@ section {
 .container video {
   margin-top: auto;
   margin-bottom: auto;
-  margin-left: auto;
+  margin-right: auto;
 }
 
 .container > img.icon {
@@ -204,9 +204,9 @@ section:nth-child(even) .container noscript {
 .sectionText {
   font-family: roboto, sans-serif;
   text-align: left;
-  margin-right: auto;
+  margin-right: 50px;
   color: #f0f0f0;
-  margin-left: 50px;
+  margin-left: auto;
   max-width: 400px;
   width: 50%;
   padding: 20px;
