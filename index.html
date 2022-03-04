@@ -178,6 +178,13 @@ gtag('js', new Date());
 gtag('config', 'UA-55048703-11');
 </script>
 
+    <script>
+        var c = new URL(location.href).searchParams.get("c");
+        if(c) {
+          document.querySelectorAll('[href="https://app.kosmi.io/"]').forEach(a => a.href = a.href + "?c=" + c);
+        }
+    </script>
+
 </body>
 
 </html>
