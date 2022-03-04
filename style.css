@@ -165,6 +165,14 @@ section {
 .container > img,
 .container > noscript > img,
 .container video {
+  width: 40%;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  margin: auto;
+}
+
+#main .container video {
   width: 45%;
   -webkit-transition: all 1s;
   -o-transition: all 1s;
@@ -189,26 +197,12 @@ noscript > img:hover {
   transform: none !important;
 }
 
-section:nth-child(even) .container {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
+.container {
+  flex-direction: row;
 }
 
-section:nth-child(even) .sectionText {
-  margin: auto;
-}
-
-section:nth-child(even) .container > img,
-section:nth-child(even) .container > noscript > img {
-  margin-right: auto;
-  margin-left: 0px;
-}
-
-section:nth-child(even) .container noscript {
-  margin-right: auto;
-  margin-left: 0px;
+#main .container {
+  flex-direction: column;
 }
 
 .sectionText {
@@ -378,7 +372,7 @@ header {
   -webkit-transform: translate3d(-50%, 0px, 1000px);
   transform: translate3d(-50%, 0px, 1000px);
   z-index: 1000;
-  background-color: #3b2076;
+  background-color: #45258A;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
@@ -428,7 +422,7 @@ nav > ul li a:hover {
 /* Screens */
 
 #main {
-  background-color: #3b2076;
+  background-color: #45258A;
 }
 
 .moreBelow {
@@ -532,7 +526,7 @@ ul.contact li a {
 
   .container img,
   .container video {
-    width: 80%;
+    width: 80% !important;
     margin: auto !important;
     -webkit-transform: none !important;
     -ms-transform: none !important;
@@ -591,6 +585,14 @@ ul.contact li a {
     max-width: 150px !important;
     max-height: 150px !important;
   }
+  #summary {
+    display: none;
+  }
+}
+@media (max-width: 950px) {
+  #main h1 {
+    font-size: 42px;
+  }
 }
 
 @media (max-height: 800px) {
@@ -642,4 +644,57 @@ footer {
 
 .getStarted a {
   margin-left: 20px;
+}
+.info {
+  background-color: #6544AC;
+}
+.socialicons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    max-width: 300px;
+}
+
+.socialicons img {
+  width: 50px !important;
+}
+
+#summary {
+  color: #fff;
+  background-color: #45258A;
+}
+
+#summary h2 {
+  margin: auto;
+  font-size: 52px;
+  background-color; 
+margin-bottom: 0px;
+}
+
+#summary .container{
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; }
+.watchplaychatcreate {
+display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 100px;
+    width: 100%;
+    justify-content: space-around;
+    max-width: 1200px;
+}
+
+.watchplaychatcreate img {
+ height: 200px;
+}
+
+.watchplaychatcreate p {
+max-width: 250px;
+}
+
+.watchplaychatcreate > div {
+display:flex;
+flex-direction: column;
+max-width: 450px;
 }
