@@ -162,6 +162,11 @@ noscript > img:hover {
   word-wrap: break-word;
 }
 
+#contactScreen .sectionText{
+  width: 100%;
+  margin: auto;
+}
+
 .sectionText p {
   margin-top: 10px;
   margin-bottom: 30px;
