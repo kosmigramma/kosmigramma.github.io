@@ -375,6 +375,10 @@ nav > ul li a:hover {
   background-color: #45258A;
 }
 
+.mainextender {
+  max-height: 500px;
+}
+
 .moreBelow {
   color: #fff;
   margin-top: auto;
@@ -440,6 +444,11 @@ ul.contact li a {
 /* Mobile */
 
 @media (max-width: 825px) {
+
+  .mainextender {
+    max-height: 100vh;
+  }
+ 
   .sectionText {
     margin-left: 20px;
     padding: 20px;
