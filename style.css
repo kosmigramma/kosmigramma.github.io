@@ -89,8 +89,13 @@ section {
   flex-direction: column;
 }
 
+.container iframe {
+  height: 360px;
+}
+
 .container > img,
-.container video {
+.container video,
+.container iframe {
   margin-top: auto;
   margin-bottom: auto;
   margin-right: auto;
@@ -102,7 +107,8 @@ section {
 
 .container > img,
 .container > noscript > img,
-.container video {
+.container video,
+.container iframe {
   width: 40%;
   -webkit-transition: all 1s;
   -o-transition: all 1s;
@@ -365,7 +371,7 @@ nav > ul li a:hover {
 
 /* Screens */
 
-#main {
+#main, .mainextender {
   background-color: #45258A;
 }
 
@@ -469,7 +475,8 @@ ul.contact li a {
   }
 
   .container img,
-  .container video {
+  .container video,
+  .container iframe {
     width: 80% !important;
     margin: auto !important;
     -webkit-transform: none !important;
