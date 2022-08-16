@@ -202,7 +202,7 @@ window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'UA-55048703-11');
-fetch("https://engine.kosmi.io/shoebill", {method:"POST"})
+fetch("https://engine.kosmi.io/shoebill?r="+btoa(document.referrer), {method:"POST"})
 </script>
 
     <script>
