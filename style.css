@@ -40,8 +40,9 @@ h1, h2 {
 section {
   -ms-scroll-snap-type: y mandatory;
   scroll-snap-type: y mandatory;
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
+  min-height: calc(var(--vh, 1vh) * 100);
+  height: auto;
+  padding: 20px;
 }
 .merch {
   position: absolute;
@@ -404,6 +405,39 @@ nav > ul li a:hover {
 
 #nesScreen {
   background-color: #342364;
+}
+
+#supportersScreen img{
+  width: 150px;
+}
+
+#supportersScreen {
+  padding: 10px;
+  height: 200px;
+  background-color: #c3b1ea;
+}
+
+#supportersScreen .container {
+  display:flex;
+  flex-direction: column;
+}
+
+#supportersScreen .container > div {
+  margin:auto;
+  font-size: 18px;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#supportersScreen .container > div:first-child {
+  margin-bottom: 10px;
+}
+
+
+#supportersScreen .container > div > a {
+  margin: 25px;
 }
 
 .seenOnList {
