@@ -413,7 +413,7 @@ nav > ul li a:hover {
 
 #supportersScreen {
   padding: 10px;
-  height: 200px;
+  min-height: 200px;
   background-color: #c3b1ea;
 }
 
@@ -435,9 +435,12 @@ nav > ul li a:hover {
   margin-bottom: 10px;
 }
 
-
 #supportersScreen .container > div > a {
   margin: 25px;
+}
+
+.logos {
+  flex-wrap: wrap;
 }
 
 .seenOnList {
@@ -581,6 +584,13 @@ ul.contact li a {
   }
   #summary {
     display: none;
+  }
+  #supportersScreen .container {
+    flex-direction: column !important;
+  }
+  #supportersScreen img{
+    width: 150px !important;
+    flex-direction: column !important;
   }
 }
 
